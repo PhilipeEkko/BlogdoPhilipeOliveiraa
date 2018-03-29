@@ -1,0 +1,21 @@
+﻿@model BlogdoPhilipeOliveira.Models.Post
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/view/shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div class="form-group">
+    @Html.LabelFor(p => p.Title)
+    <div>@Model.Title</div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(p => p.DateAdded) | @Html.LabelFor(p => p.Dateupdated)
+    <div>@Model.DateAdded | @Model.Dateupdated</div>
+</div>
+<div class="form-group">
+    @Html.LabelFor(p => p.PostingBody)
+    <div>@Model.PostingBody</div>
+</div>
+
