@@ -153,21 +153,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201803201418387_InitialModel.cs" />
-    <Compile Include="Migrations\201803201418387_InitialModel.Designer.cs">
-      <DependentUpon>201803201418387_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\201804031237499_InitialModel.cs" />
+    <Compile Include="Migrations\201804031237499_InitialModel.Designer.cs">
+      <DependentUpon>201804031237499_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201803201508530_AddBanco.cs" />
-    <Compile Include="Migrations\201803201508530_AddBanco.Designer.cs">
-      <DependentUpon>201803201508530_AddBanco.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803221208383_InitialModel1.cs" />
-    <Compile Include="Migrations\201803221208383_InitialModel1.Designer.cs">
-      <DependentUpon>201803221208383_InitialModel1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803221213073_InitialModel2.cs" />
-    <Compile Include="Migrations\201803221213073_InitialModel2.Designer.cs">
-      <DependentUpon>201803221213073_InitialModel2.cs</DependentUpon>
+    <Compile Include="Migrations\201804031505093_save.cs" />
+    <Compile Include="Migrations\201804031505093_save.Designer.cs">
+      <DependentUpon>201804031505093_save.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BlogContext.cs" />
@@ -217,8 +209,9 @@
     <Content Include="Views\Posts\Index.cshtml" />
     <Content Include="Views\Posts\Details.cshtml" />
     <Content Include="Views\Posts\Edit.cshtml" />
-    <Content Include="Views\Posts\Delet.cshtml" />
+    <Content Include="Views\Posts\Delete.cshtml" />
     <Content Include="Views\Posts\DeleteCompleto.cshtml" />
+    <Content Include="Views\Posts\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -237,17 +230,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803201418387_InitialModel.resx">
-      <DependentUpon>201803201418387_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804031237499_InitialModel.resx">
+      <DependentUpon>201804031237499_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803201508530_AddBanco.resx">
-      <DependentUpon>201803201508530_AddBanco.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803221208383_InitialModel1.resx">
-      <DependentUpon>201803221208383_InitialModel1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803221213073_InitialModel2.resx">
-      <DependentUpon>201803221213073_InitialModel2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804031505093_save.resx">
+      <DependentUpon>201804031505093_save.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

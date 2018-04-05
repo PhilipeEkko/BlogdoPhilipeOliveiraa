@@ -1,7 +1,7 @@
 ﻿@model BlogdoPhilipeOliveira.Models.Post
 @{
     ViewBag.Title = "Details";
-    Layout = "~/view/shared/_Layout.cshtml";
+    Layout = "~/views/Shared/_Layout.cshtml";
 }
 
 <h2>Details</h2>
@@ -11,11 +11,14 @@
     <div>@Model.Title</div>
 </div>
 <div class="form-group">
-    @Html.LabelFor(p => p.DateAdded) | @Html.LabelFor(p => p.Dateupdated)
-    <div>@Model.DateAdded | @Model.Dateupdated</div>
+    @Html.LabelFor(p => p.DateAdded) | @Html.LabelFor(p => p.DateUpdated)
+    <div>@Model.DateAdded | @Model.DateAdded</div>
 </div>
 <div class="form-group">
     @Html.LabelFor(p => p.PostingBody)
     <div>@Model.PostingBody</div>
 </div>
 
+@Html.ActionLink("Voltar", "Index", "Posts", null, new { @class = "btn btn-primary" })
+@Html.ActionLink("Editar", "Edit", "Posts", new { Id = Model.Id }, new { @class = "btn btn-primary" })
+@Html.ActionLink("Deletar", "Delete", "Posts", new { Id = Model.Id }, new { @class = "btn btn-primary" })

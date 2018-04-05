@@ -1,10 +1,15 @@
-﻿
-@model BlogdoPhilipeOliveira.Models.Post
+﻿@model BlogdoPhilipeOliveira.Models.Post
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Edit</h2>
+
+
+<h2>Novo Post</h2>
+
+
+
 
 @using (@Html.BeginForm("Save", "Posts", FormMethod.Post, new { enctype = "multipart/form-data" }))
 
@@ -22,10 +27,10 @@
         <input type="submit" value="Salvar" class="btn btn-primary" />
 
     </div>
-    @section scripts
+    @*@section scripts
         {
 
         <script src="Https://cloud.tinymce.com/stable/tinymce.min.js"></script>
             <script>tinymce.init({ selector: 'textarea' });</script>
-            }
+            }*@
 }

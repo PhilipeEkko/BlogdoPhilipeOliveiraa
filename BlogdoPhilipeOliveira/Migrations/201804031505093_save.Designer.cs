@@ -7,13 +7,13 @@ namespace BlogdoPhilipeOliveira.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddBanco : IMigrationMetadata
+    public sealed partial class save : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddBanco));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(save));
         
         string IMigrationMetadata.Id
         {
-            get { return "201803201508530_AddBanco"; }
+            get { return "201804031505093_save"; }
         }
         
         string IMigrationMetadata.Source
